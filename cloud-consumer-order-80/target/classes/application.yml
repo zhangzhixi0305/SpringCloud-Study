@@ -1,0 +1,11 @@
+server:
+  port: 80
+spring:
+  application:
+    name: cloud-consumer-order
+
+# 订单服务调用支付服务
+order:
+  payment:
+    service:
+      url: http://localhost:8001
