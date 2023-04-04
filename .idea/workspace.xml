@@ -21,6 +21,58 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="3ca4fa126e62245e02d7ccd225a4d9befceb81ea" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1680575123" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="6d300b58-e1a0-4b78-9463-281b06fea7d4" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="6d300b58-e1a0-4b78-9463-281b06fea7d4" />
+        <option name="url" value="https://github.com/zhangzhixi0305/SpringCloud-Study.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="JRebelWorkspace">
     <option name="jrebelEnabledAutocompile" value="true" />
   </component>
@@ -32,6 +84,7 @@
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\StudySoftware\Maven\apache-maven-3.6.3\maven3" />
         <option name="mavenHome" value="D:/StudySoftware/Maven/apache-maven-3.6.3" />
+        <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="D:\StudySoftware\Maven\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -39,7 +92,6 @@
       <MavenImportingSettings>
         <option name="jdkForImporter" value="1.8" />
         <option name="vmOptionsForImporter" value="-Xmx768m" />
-        <option name="workspaceImportEnabled" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -47,6 +99,7 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="2NrDGQ2rjKbA9C5TQcTF5NC5OlF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="showVisibilityIcons" value="true" />
@@ -62,7 +115,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "jdk1.8",
-    "last_opened_file_path": "F:/StudyProject/尚硅谷/SpringCloud-Study/cloud-api-common/src/main/java/com/zhixi",
+    "last_opened_file_path": "F:/StudyProject/尚硅谷/SpringCloud-Study/cloud-provider-payment-8002",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,8 +123,8 @@
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.29655173",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "e05157e99dc1284b55e2edf16a8842c5",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "spring.configuration.checksum": "ee9e8e0cc5dece1e7761b5339c416b73",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -91,6 +144,8 @@
       <recent name="com.zhixi.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\StudyProject\尚硅谷\SpringCloud-Study" />
+      <recent name="F:\StudyProject\尚硅谷\SpringCloud-Study\cloud-eureka-server-7001\src\main\resources" />
       <recent name="F:\StudyProject\尚硅谷\SpringCloud-Study\cloud-api-common\src\main\java\com\zhixi" />
       <recent name="F:\StudyProject\尚硅谷\SpringCloud-Study\cloud-consumer-order-80\src\main\java\com\zhixi" />
       <recent name="F:\StudyProject\尚硅谷\SpringCloud-Study\cloud-consumer-order-80\src\main\java" />
@@ -103,7 +158,40 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringCloudProviderPayment">
+  <component name="RunManager" selected="Spring Boot.SpringCloudProviderPayment8002">
+    <configuration name="CloudEurekaServer7001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-eureka-server-7001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zhixi.CloudEurekaServer7001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CloudEurekaServer7002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-eureka-server-7002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zhixi.CloudEurekaServer7002" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhixi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CloudEurekaServer7003" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-eureka-server-7003" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zhixi.CloudEurekaServer7003" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhixi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderMain80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-consumer-order-80" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zhixi.OrderMain80" />
@@ -117,9 +205,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringCloudProviderPayment" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="SpringCloudProviderPayment8001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-provider-payment-8001" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zhixi.SpringCloudProviderPayment" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zhixi.SpringCloudProviderPayment8001" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.zhixi.*" />
@@ -130,10 +218,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringCloudProviderPayment8002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-provider-payment-8002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zhixi.SpringCloudProviderPayment8002" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhixi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.CloudEurekaServer7001" />
+      <item itemvalue="Spring Boot.SpringCloudProviderPayment8001" />
+      <item itemvalue="Spring Boot.SpringCloudProviderPayment8002" />
+      <item itemvalue="Spring Boot.CloudEurekaServer7002" />
+      <item itemvalue="Spring Boot.OrderMain80" />
+      <item itemvalue="Spring Boot.CloudEurekaServer7003" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SpringCloudProviderPayment" />
+        <item itemvalue="Spring Boot.SpringCloudProviderPayment8002" />
+        <item itemvalue="Spring Boot.SpringCloudProviderPayment8001" />
         <item itemvalue="Spring Boot.OrderMain80" />
+        <item itemvalue="Spring Boot.CloudEurekaServer7003" />
+        <item itemvalue="Spring Boot.CloudEurekaServer7002" />
       </list>
     </recent_temporary>
   </component>
@@ -151,23 +263,125 @@
       <workItem from="1680508222219" duration="21000" />
       <workItem from="1680508248841" duration="2000" />
       <workItem from="1680510484750" duration="1176000" />
-      <workItem from="1680528812883" duration="2545000" />
+      <workItem from="1680528812883" duration="3402000" />
+      <workItem from="1680535092100" duration="1213000" />
+      <workItem from="1680571338333" duration="1522000" />
+      <workItem from="1680572887502" duration="1775000" />
+      <workItem from="1680574923974" duration="2229000" />
+      <workItem from="1680603034162" duration="810000" />
+      <workItem from="1680615601618" duration="203000" />
+      <workItem from="1680615818165" duration="792000" />
+      <workItem from="1680616623258" duration="1152000" />
+      <workItem from="1680620643338" duration="3487000" />
+      <workItem from="1680624250357" duration="653000" />
+      <workItem from="1680624925257" duration="476000" />
     </task>
+    <task id="LOCAL-00001" summary="Eureka单机版本DEMO">
+      <created>1680572362915</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680572362915</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Eureka单机版本DEMO">
+      <created>1680573585240</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680573585240</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Eureka集群版本DEMO">
+      <created>1680624444749</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680624444749</updated>
+    </task>
+    <task id="LOCAL-00004" summary="设置不提交某些文件">
+      <created>1680625171908</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680625171908</updated>
+    </task>
+    <task id="LOCAL-00005" summary="设置不提交某些文件">
+      <created>1680625270384</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680625270384</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cloud-provider-payment-8001/src/main/java/com/zhixi/controller/PaymentController.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="ea1fe7f8-a443-4c73-8ae8-cee981d12a3e">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="ea1fe7f8-a443-4c73-8ae8-cee981d12a3e" value="TOOL_WINDOW" />
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Eureka单机版本DEMO" />
+    <MESSAGE value="Eureka集群版本DEMO" />
+    <MESSAGE value="设置不提交某些文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="设置不提交某些文件" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
