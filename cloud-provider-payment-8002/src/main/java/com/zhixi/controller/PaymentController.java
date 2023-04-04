@@ -5,6 +5,7 @@ import com.zhixi.pojo.Payment;
 import com.zhixi.result.CommonResult;
 import com.zhixi.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -25,16 +26,18 @@ import java.util.List;
 @RequestMapping("/payment")
 @SuppressWarnings("all")
 public class PaymentController {
+
     @Resource
     private PaymentService paymentService;
 
-    @Value("${server.port}")
-    private String serverPort;
     /**
      * 服务发现
      */
     @Resource
     private DiscoveryClient discoveryClient;
+
+    @Value("${server.port}")
+    private String serverPort;
 
     @PostMapping(value = "/create")
     public CommonResult create(@RequestBody Payment payment) {
@@ -58,7 +61,6 @@ public class PaymentController {
         }
     }
 
-
     /**
      * 服务发现
      *
@@ -81,3 +83,4 @@ public class PaymentController {
         return this.discoveryClient;
     }
 }
+
