@@ -5,7 +5,6 @@ import com.zhixi.pojo.Payment;
 import com.zhixi.result.CommonResult;
 import com.zhixi.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -13,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @ClassName PaymentController
@@ -81,6 +81,23 @@ public class PaymentController {
         }
 
         return this.discoveryClient;
+    }
+
+    /**
+     * 测试OpenFeign超时控制
+     *
+     * @return 服务端口
+     */
+    @GetMapping(value = "/feign/timeout")
+    public String paymentFeignTimeout()
+    {
+        // 业务逻辑处理正确，但是需要耗费3秒钟
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return serverPort;
     }
 }
 
