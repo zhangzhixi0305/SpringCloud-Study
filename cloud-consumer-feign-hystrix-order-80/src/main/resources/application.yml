@@ -1,0 +1,23 @@
+server:
+  port: 80
+  servlet:
+    application-display-name: cloud-consumer-feign-hystrix-order-80
+
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+
+# 开启feign的hystrix支持
+feign:
+  hystrix:
+    enabled: true
+  # 配置feign超时时间,否则服务降级不生效
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: full
+
