@@ -4,7 +4,6 @@ import com.zhixi.pojo.Payment;
 import com.zhixi.result.CommonResult;
 import com.zhixi.service.PaymentClient;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

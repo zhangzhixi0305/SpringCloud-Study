@@ -17,10 +17,11 @@ public class MyRibbonConfig {
 
     /**
      * 自定义负载均衡策略
+     *
      * @return IRule
      */
     @Bean
-    public IRule myRule(){
+    public IRule myRule() {
         return new RandomRule();
     }
 }

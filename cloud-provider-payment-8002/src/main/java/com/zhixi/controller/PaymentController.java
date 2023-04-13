@@ -61,6 +61,11 @@ public class PaymentController {
         }
     }
 
+    @GetMapping(value = "/lb")
+    public String getPaymentLB() {
+        return serverPort;
+    }
+
     /**
      * 服务发现
      *
@@ -89,8 +94,7 @@ public class PaymentController {
      * @return 服务端口
      */
     @GetMapping(value = "/feign/timeout")
-    public String paymentFeignTimeout()
-    {
+    public String paymentFeignTimeout() {
         // 业务逻辑处理正确，但是需要耗费3秒钟
         try {
             TimeUnit.SECONDS.sleep(3);
