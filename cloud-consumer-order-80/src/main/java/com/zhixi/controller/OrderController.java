@@ -50,5 +50,8 @@ public class OrderController {
     public String paymentZipkin() {
         String result = restTemplate.getForObject(paymentUrl + "/payment/zipkin", String.class);
         return result;
+
+
+
     }
 }
