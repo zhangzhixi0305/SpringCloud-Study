@@ -4,6 +4,12 @@ server:
 spring:
   application:
     name: cloud-payment-service
+  # 配置微服务链路追踪
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      probability: 1 # 配置采样率，默认的采样比例为：0:1，即10%，所设置的值介于0-1之间，1则表示全部采集
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver

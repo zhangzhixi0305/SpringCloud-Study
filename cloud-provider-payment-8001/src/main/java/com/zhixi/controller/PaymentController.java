@@ -102,4 +102,14 @@ public class PaymentController {
         }
         return serverPort;
     }
+
+    /**
+     * zipkin sleuth
+     *
+     * @return 响应内容
+     */
+    @GetMapping("/zipkin")
+    public String paymentZipkin() {
+        return "hi ,i'am paymentzipkin server fall back，welcome to here, O(∩_∩)O哈哈~";
+    }
 }
