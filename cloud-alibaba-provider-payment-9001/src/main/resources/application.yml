@@ -1,0 +1,15 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: nacos-payment-provider
+  cloud:
+    nacos:
+      discovery:
+        #配置Nacos地址(Nginx的server_name配置什么，这里就写什么，域名或者公网IP)
+        server-addr: www.zhangzhixi.cn:8848
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
