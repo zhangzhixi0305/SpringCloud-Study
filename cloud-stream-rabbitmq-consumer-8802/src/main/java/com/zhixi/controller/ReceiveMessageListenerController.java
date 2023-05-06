@@ -21,6 +21,7 @@ public class ReceiveMessageListenerController {
 
     /**
      * 消息接收
+     *
      * @param message 服务端发送的是什么类型的消息，这里接收的就是什么类型的消息
      */
     @StreamListener(Sink.INPUT)

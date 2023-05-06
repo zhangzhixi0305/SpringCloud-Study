@@ -34,6 +34,10 @@
         <module>cloud-alibaba-provider-payment-9002</module>
         <module>cloud-alibaba-consumer-nacos-order-83</module>
         <module>cloud-alibaba-config-nacos-client-3377</module>
+        <module>cloud-alibaba-sentinel-service-8401</module>
+        <module>cloud-alibaba-provider-payment-9003</module>
+        <module>cloud-alibaba-provider-payment-9004</module>
+        <module>cloud-alibaba-consumer-nacos-order-84</module>
     </modules>
 
     <properties>
@@ -79,11 +83,14 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!--spring cloud alibaba 2.1.0.RELEASE-->
+            <!--spring cloud alibaba 2.2.2.RELEASE
+                在2.2.2版本，才支持参数：web-context-unify: false
+                这里对alibaba版本做了升级
+            -->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-                <version>2.1.0.RELEASE</version>
+                <version>2.2.2.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

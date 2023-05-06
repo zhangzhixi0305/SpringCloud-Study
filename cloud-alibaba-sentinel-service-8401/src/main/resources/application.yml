@@ -1,0 +1,42 @@
+server:
+  port: 8401
+
+spring:
+  application:
+    name: cloudalibaba-sentinel-service
+  cloud:
+    nacos:
+      discovery:
+        #Nacos服务注册中心地址
+        server-addr: www.zhangzhixi.cn:8848
+    sentinel:
+      # 添加Nacos数据源配置
+      datasource:
+        ds1:
+          nacos:
+            server-addr: www.zhangzhixi.cn:8848
+            username: nacos
+            password: nacos
+            dataId: cloudalibaba-sentinel-service
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
+      # 关闭Context收敛，这样被监控方法可以进行不同链路的单独控制
+      web-context-unify: false
+      transport:
+        # Sentinel管理控制台的端口，注意这里的坑：
+        # 刚开始这里写的是我服务器的Sentinel地址，报错：fetch metric http://169.254.176.17:8719
+        # 原因是由于服务器文法访问我们本地的电脑， 所以会连接失败， 所以要想连接远端sentinel就必须把项目部署到服务器上面。
+        # 然后添加参数：client-ip: 上线后的服务器IP地址（你的应用IP）
+        dashboard: localhost:8080
+        # 微服务与Sentinel组件对应的操作端口
+        port: 8719
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+feign:
+  sentinel:
+    enabled: true # 激活Sentinel对Feign的支持
+

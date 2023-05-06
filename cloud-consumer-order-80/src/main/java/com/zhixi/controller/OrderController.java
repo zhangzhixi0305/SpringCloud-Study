@@ -44,13 +44,13 @@ public class OrderController {
     /**
      * 测试zipkin链路追踪
      * http://localhost/consumer/payment/zipkin
+     *
      * @return 从服务端返回的字符串
      */
     @GetMapping("/zipkin")
     public String paymentZipkin() {
         String result = restTemplate.getForObject(paymentUrl + "/payment/zipkin", String.class);
         return result;
-
 
 
     }
